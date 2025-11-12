@@ -1,23 +1,15 @@
-# GitHub Pages — Starter (statique)
+# Cockpit POS Program
 
-Ce dépôt est prêt pour déployer un site **statique** via **GitHub Pages** avec une **Action**.
+Static dashboard (GitHub Pages) to visualize **# of tills per POS solution** as a dynamic **pie chart**.
 
-## Utilisation rapide
-1. Créez un dépôt GitHub vide et poussez ces fichiers (**branche `main`**).
-2. Dans **Settings → Pages**, mettez **Build and deployment → Source: GitHub Actions**.
-3. Sur chaque `git push` de `main`, l'Action va publier votre site.
+- Edit the table → chart updates live.
+- Data is stored locally in your browser (localStorage).
+- Tech: HTML/CSS + Chart.js, deployed via GitHub Actions.
 
-URL finale : `https://<votre-utilisateur>.github.io/<nom-du-depot>/`  
-(ou votre domaine personnalisé, voir plus bas)
+## Quick start
+1. Push these files to your repo (branch `main`).
+2. In **Settings → Pages**, set **Source = GitHub Actions**.
+3. Open the Pages URL and edit the data in the table.
 
-## Déploiement local (optionnel)
-Pas nécessaire : c'est un site statique (juste HTML/CSS).
-
-## Domaine personnalisé (optionnel)
-- Ajoutez un enregistrement **CNAME** de votre domaine vers `<utilisateur>.github.io` chez votre registrar.
-- Ajoutez un fichier `CNAME` à la racine du dépôt contenant votre domaine : `www.mondomaine.com`.
-- Activez **Enforce HTTPS** dans **Settings → Pages**.
-
----
-
-_Starter créé automatiquement pour vous._
+## Replace logo
+Put your logo in `assets/logo.png` and it will be used automatically.
