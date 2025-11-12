@@ -1,15 +1,6 @@
-# Cockpit POS Program (v2)
+# Cockpit POS Program (v3)
+Version robuste et compatible (ES5) — devrait fonctionner sur tous les navigateurs récents et configurations d’entreprise.
 
-Site responsive (GitHub Pages) pour visualiser le **nombre de caisses par solution d'encaissement** via un **camembert Chart.js**.
-
-- UI en français, design propre (bleu Decathlon), responsive mobile/desktop.
-- Édition des données dans un tableau → mise à jour en direct.
-- Persistance locale via `localStorage` (aucun backend).
-
-## Installation
-1. Poussez ces fichiers sur la branche `main` de votre dépôt Pages.
-2. `Settings → Pages` : Source = **GitHub Actions**.
-3. Ouvrez l'URL de votre site Pages.
-
-## Logo
-Remplacez `assets/logo.png` par votre logo (il est contraint par CSS : hauteur 32px desktop / 28px mobile).
+- Graphique Chart.js avec gestion d'erreurs (message si la lib est bloquée).
+- Données par défaut visibles dès le chargement ; table éditable.
+- Design responsive et logo contraint.

@@ -12,6 +12,9 @@
     <script defer src="app.js"></script>
   </head>
   <body>
+    <noscript>
+      <div class="noscript">Activez JavaScript pour voir le tableau de bord.</div>
+    </noscript>
     <header class="topbar">
       <div class="container topbar-inner">
         <a class="brand" href="#">
@@ -36,6 +39,7 @@
         </div>
         <div class="chart-wrap">
           <canvas id="pie" aria-label="Répartition des caisses par solution"></canvas>
+          <div id="chart-error" class="muted small" style="display:none;margin-top:8px"></div>
         </div>
         <div class="legend" id="legend"></div>
       </section>
@@ -48,7 +52,14 @@
             <thead>
               <tr><th>Solution d'encaissement</th><th class="num"># Caisses</th></tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+              <!-- Fallback statique si JS ne charge pas -->
+              <tr><td>Wynd</td><td class="num">420</td></tr>
+              <tr><td>Openbravo</td><td class="num">280</td></tr>
+              <tr><td>Epos</td><td class="num">180</td></tr>
+              <tr><td>Laura</td><td class="num">140</td></tr>
+              <tr><td>Autre</td><td class="num">60</td></tr>
+            </tbody>
           </table>
         </div>
         <div class="row-actions">
