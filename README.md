@@ -1,15 +1,15 @@
-# Cockpit POS Program
+# Cockpit POS Program (v2)
 
-Static dashboard (GitHub Pages) to visualize **# of tills per POS solution** as a dynamic **pie chart**.
+Site responsive (GitHub Pages) pour visualiser le **nombre de caisses par solution d'encaissement** via un **camembert Chart.js**.
 
-- Edit the table → chart updates live.
-- Data is stored locally in your browser (localStorage).
-- Tech: HTML/CSS + Chart.js, deployed via GitHub Actions.
+- UI en français, design propre (bleu Decathlon), responsive mobile/desktop.
+- Édition des données dans un tableau → mise à jour en direct.
+- Persistance locale via `localStorage` (aucun backend).
 
-## Quick start
-1. Push these files to your repo (branch `main`).
-2. In **Settings → Pages**, set **Source = GitHub Actions**.
-3. Open the Pages URL and edit the data in the table.
+## Installation
+1. Poussez ces fichiers sur la branche `main` de votre dépôt Pages.
+2. `Settings → Pages` : Source = **GitHub Actions**.
+3. Ouvrez l'URL de votre site Pages.
 
-## Replace logo
-Put your logo in `assets/logo.png` and it will be used automatically.
+## Logo
+Remplacez `assets/logo.png` par votre logo (il est contraint par CSS : hauteur 32px desktop / 28px mobile).
