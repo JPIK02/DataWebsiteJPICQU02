@@ -7,6 +7,8 @@
     <meta name="description" content="Tableau de bord — Nombre de caisses par solution d'encaissement">
     <meta name="theme-color" content="#3643BA">
     <link rel="stylesheet" href="styles.css">
+    <!-- D3.js from CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -33,7 +35,7 @@
           <span id="total" class="badge">0 caisses</span>
         </div>
         <div class="chart-wrap">
-          <svg id="pie" viewBox="-1 -1 2 2" aria-label="Répartition des caisses par solution"></svg>
+          <svg id="pie" aria-label="Répartition des caisses par solution" role="img"></svg>
         </div>
         <div class="legend" id="legend"></div>
       </section>
