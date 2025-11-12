@@ -1,0 +1,15 @@
+/* Reset léger */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; }
+
+/* Layout */
+.container { max-width: 860px; margin: 0 auto; padding: 1.2rem; }
+header { background: #0b1f7a; color: white; }
+header a { color: #cfe0ff; text-decoration: none; margin-right: 1rem; }
+header a:hover { text-decoration: underline; }
+
+h1, h2 { margin: .2rem 0 .6rem; }
+main { padding: 1rem 0; }
+code { background: #f4f6fa; padding: .15rem .35rem; border-radius: 4px; }
+footer { border-top: 1px solid #eee; color: #666; }
